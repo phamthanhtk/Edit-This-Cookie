@@ -1,0 +1,42 @@
+< meta  charset = " utf-8 " />
+     < meta  http-Equiv = " X-UA-Tương thích " nội dung = " IE = edge " />
+     < meta  name = " viewport " content = " width = chiều rộng thiết bị, scale-scale = 1.0 " />
+     < link  rel = " icon " href = " <% = BASE_URL%> favicon.ico " />
+     < liên kết
+       href = " https://fonts.googleapis.com/css?f Family = Montserrat : 400.700 "
+       href = " https://fonts.googleapis.com/css?f Family = Roboto + Ngưng tụ : 400,700 & display = exchange "
+       rel = "bản định kiểu "
+     />
+     < link  rel = " icon " href = " <% = BASE_URL%> favicon.ico " />
+     < title > Cho vay P2P </ title >
+   </ đầu >
+   < cơ thể >
+ mẫu >
+   < div  id = " ứng dụng " >
+     < Navbar />
+     < div
+       class = " nội dung nội dung - hasWeb3 "
+       v-if = "được chèn &&  ! không hợp lệ "
+       v-bind : class = " {tokenSale : active} "
+     >
+       < Thanh bên  v-if = " ! Hoạt động " />
+       < phần >
+         < bộ định tuyến-xem />
+       </ phần >
+     < nav  class = "thanh điều hướng " >
+       < div  class = " navbar__left " >
+         < bộ định tuyến-liên kết : to = " {name :  ' home ' } "  class = " navbar__title "
+           > cho vay p2p </ router-link
+         >
+       </ div >
+       < bộ định tuyến liên kết
+         : to = " {name :  ' allRequests ' } "
+         class = " navbar__right navbar__right - FirstItem "
+         v-if = " $ tuyến . khớp . một số (( bản ghi ) =>  bản ghi . name  ===  ' request ' ) "
+         v-ràng buộc : class = " {
+           navbar__active :  $ tuyến . tên  ===  ' allRequests ' ,
+         } "
+         > Yêu cầu cho vay mở </ router-link
+       >
+       < bộ định tuyến liên kết
+         : to = " {name :  ' userRequests ' } "
